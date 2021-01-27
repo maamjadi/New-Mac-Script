@@ -45,7 +45,7 @@ gem install xcode-install
 # Apps
 brew cask install skype
 brew cask install spotify
-brew cask install firefox
+brew cask install google-chrome
 brew cask install slack
 brew cask install microsoft-office
 brew cask install microsoft-teams
