@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
@@ -43,33 +45,33 @@ gem install fastlane
 gem install xcode-install
 
 # Apps
-brew cask install skype
-brew cask install spotify
-brew cask install google-chrome
-brew cask install slack
-brew cask install microsoft-office
-brew cask install microsoft-teams
-brew cask install zoomus
-brew cask install zoomus-outlook-plugin
-brew cask install commander-one
-brew cask install appcleaner
-brew cask install cyberduck
-brew cask install tunnelblick
-brew cask install postman
-brew cask install visual-studio-code
-brew cask install sourcetree
-brew cask install zeplin
-brew cask install charles
-brew cask install java
-brew cask install vysor
-brew cask install keka
-brew cask install webpquicklook
-brew cask install quicklook-json
-brew cask install qlvideo
-brew cask install qlmarkdown
+brew install skype
+brew install spotify
+brew install google-chrome
+brew install slack
+brew install microsoft-office
+brew install microsoft-teams
+brew install zoomus
+brew install zoomus-outlook-plugin
+brew install commander-one
+brew install appcleaner
+brew install cyberduck
+brew install tunnelblick
+brew install postman
+brew install visual-studio-code
+brew install sourcetree
+brew install zeplin
+brew install charles
+brew install java
+brew install vysor
+brew install keka
+brew install webpquicklook
+brew install quicklook-json
+brew install qlvideo
+brew install qlmarkdown
 
 # iOS
-xcversion install 12.3
+xcversion install 12.5
 
 sudo xcode-select -switch /Applications/Xcode.app/Contents/Developer
 
@@ -94,3 +96,5 @@ export NVM_DIR="$HOME/.nvm" && . /usr/local/opt/nvm/nvm.sh && nvm install node
 
 export NVM_DIR="$HOME/.nvm"
 if [ -s "/usr/local/opt/nvm/nvm.sh" ]; then . "/usr/local/opt/nvm/nvm.sh"; fi
+
+exit 0
