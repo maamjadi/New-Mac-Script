@@ -7,8 +7,8 @@ printf "✅ Homebrew Installation"
 # oh-my-zsh Terminal
 printf "✅ oh-my-zsh Installation"
 brew install zsh
-printf "⛔️ Navigate to directory where New_Mac_Script.sh is Located on terminal!!"
-printf "-> e.g. cd [MY PATH]!!"
+printf "⛔️ Navigate to directory where New_Mac_Script.sh is Located on terminal!!  "
+printf " e.g. cd [MY PATH]!!"
 printf "✅ oh-my-zsh Plugin Setup"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
@@ -20,8 +20,8 @@ cd fonts
 cd ..
 rm -rf fonts
 
-printf "✅ Replace .zshrc"
-cp -f ~/.zshrc .zshrc
+printf "✅ Replace .zshrc  "
+sudo cp -f .zshrc ~/.zshrc 
 
 # Packages
 printf "✅ Packages Installation"
@@ -41,7 +41,7 @@ brew install python
 brew install cocoapods
 brew install carthage
 brew install rome
-brew install nvm
+brew install nvmve
 brew install watchman
 brew install imagemagick
 brew install swiftlint
@@ -52,8 +52,8 @@ brew install sass/sass/sass
 
 # Gems
 printf "✅ Gems Installation"
-gem install fastlane
-gem install xcode-install
+sudo gem install fastlane
+sudo gem install xcode-install
 
 # Apps
 printf "✅ Apps Installation"
@@ -63,8 +63,8 @@ brew install google-chrome
 brew install slack
 brew install microsoft-office
 brew install microsoft-teams
-brew install zoomus
-brew install zoomus-outlook-plugin
+brew install zoom
+brew install zoom-outlook-plugin
 brew install commander-one
 brew install appcleaner
 brew install cyberduck
@@ -92,12 +92,12 @@ export COCOAPODS_DISABLE_STATS=true
 
 # Android
 printf "✅ Android Setup"
-mkdir -p $HOME/.gradle && touch $HOME/.gradle/gradle.properties
-cp -v $HOME/.gradle/gradle.properties $HOME/.gradle/gradle.properties-macosi_$(date +%s)
-echo "org.gradle.daemon=true" > $HOME/.gradle/gradle.properties
-echo "org.gradle.jvmargs=-Xmx4g" >> $HOME/.gradle/gradle.properties
-echo "org.gradle.parallel=true" >> $HOME/.gradle/gradle.properties
-echo "org.gradle.configureondemand=true" >> $HOME/.gradle/gradle.properties
+sudo mkdir -p $HOME/.gradle && touch $HOME/.gradle/gradle.properties
+sudo cp -v $HOME/.gradle/gradle.properties $HOME/.gradle/gradle.properties-macosi_$(date +%s)
+sudo echo "org.gradle.daemon=true" > $HOME/.gradle/gradle.properties
+sudo echo "org.gradle.jvmargs=-Xmx4g" >> $HOME/.gradle/gradle.properties
+sudo echo "org.gradle.parallel=true" >> $HOME/.gradle/gradle.properties
+sudo echo "org.gradle.configureondemand=true" >> $HOME/.gradle/gradle.properties
 
 eval "$(jenv init -)"
 export PATH=$PATH:~/Library/Android/sdk/tools
@@ -106,7 +106,7 @@ export ANDROID_HOME=~/Library/Android/sdk
 
 #Frontend
 printf "✅ Frontend Setup"
-mkdir -p $HOME/.nvm
+sudo mkdir -p $HOME/.nvm
 export NVM_DIR="$HOME/.nvm" && . /usr/local/opt/nvm/nvm.sh && nvm install node
 
 export NVM_DIR="$HOME/.nvm"
