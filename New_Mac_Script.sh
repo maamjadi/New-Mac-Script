@@ -81,10 +81,13 @@ brew install webpquicklook
 brew install quicklook-json
 brew install qlvideo
 brew install qlmarkdown
+brew install fork
+brew install proxyman
+brew install figma
 
 # iOS
 printf "✅ iOS Setup"
-xcversion install 13.2.1
+xcversion install 14.2.0
 
 sudo xcode-select -switch /Applications/Xcode.app/Contents/Developer
 
